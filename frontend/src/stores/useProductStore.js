@@ -79,4 +79,5 @@ export const useProductStore = create((set) => ({
 			console.log("Error fetching featured products:", error);
 		}
 	},
+	resetProducts: () => set({ products: [] }), // Reset products
 }));
